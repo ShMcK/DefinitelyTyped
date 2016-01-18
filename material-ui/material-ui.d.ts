@@ -197,7 +197,7 @@ declare namespace __MaterialUI {
             subtitleStyle?: React.CSSProperties;
             textStyle?: React.CSSProperties;
             style?: React.CSSProperties;
-            avatar: React.ReactElement<any> | string;
+            avatar?: React.ReactElement<any> | string;
         }
         export class CardHeader extends React.Component<CardHeaderProps, {}> {
         }
@@ -558,6 +558,9 @@ declare namespace __MaterialUI {
         }
         export class ListDivider extends React.Component<ListDividerProps, {}> {
         }
+        
+        export class Divider extends React.Component<ListDividerProps, {}> {
+        }
 
         interface ListItemProps extends React.Props<ListItem> {
             autoGenerateNestedIndicator?: boolean;
@@ -617,7 +620,7 @@ declare namespace __MaterialUI {
         }
 
         interface MenuProps extends React.Props<Menu> {
-            index: number;
+            index?: number;
             text?: string;
             menuItems: MenuItemRequest[];
             zDepth?: number;
